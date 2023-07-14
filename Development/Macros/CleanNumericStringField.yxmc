@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="198" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Text</FieldType>
+          <Fields orderChanged="False">
+            <Field name="xxxTEXTFIELD1xxx" />
+            <Field name="xxxTEXTFIELD2xxx" />
+            <Field name="*Unknown" />
+          </Fields>
+          <CopyOutput value="False" />
+          <Expression>if REGEX_Match([_CurrentField_], '^\s*\${0,1}\(\${0,1}[0-9.,]*\)\s*$')
+THEN 
+ REGEX_Replace(
+ Replace([_CurrentField_],',','') ,'\s*\${0,1}\(\${0,1}([0-9.]*)\)\s*','-$1')
+elseif REGEX_Match([_CurrentField_], '^[\s\-\$]*[0-9,.]+\s*$') 
+ then REGEX_Replace([_CurrentField_],',|\s|\$','')
+elseif [_CurrentField_] = '-'
+then '0'
+else
+ [_CurrentField_]
+ENDIF</Expression>
+          <ChangeFieldType value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>if REGEX_Match([_CurrentField_], '^\s*\${0,1}\(\${0,1}[0-9.,]...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="xxxTEXTFIELD1xxx" size="13" source="Formula: if REGEX_Match([_CurrentField_], '^\s*\${0,1}\(\${0,1}[0-9.,]*\)\s*$')&#xA;THEN &#xA; REGEX_Replace(&#xA; Replace([_CurrentField_],',','') ,'\s*\${0,1}\(\${0,1}([0-9.]*)\)\s*','-$1')&#xA;elseif REGEX_Match([_CurrentField_], '^[\s\-\$]*[0-9,.]+\s*$') &#xA; then REGEX_Replace([_CurrentField_],',|\s|\$','')&#xA;elseif [_CurrentField_] = '-'&#xA;then '0'&#xA;else&#xA; [_CurrentField_]&#xA;ENDIF" type="String" />
+            <Field name="xxxTEXTFIELD2xxx" size="17" source="Formula: if REGEX_Match([_CurrentField_], '^\s*\${0,1}\(\${0,1}[0-9.,]*\)\s*$')&#xA;THEN &#xA; REGEX_Replace(&#xA; Replace([_CurrentField_],',','') ,'\s*\${0,1}\(\${0,1}([0-9.]*)\)\s*','-$1')&#xA;elseif REGEX_Match([_CurrentField_], '^[\s\-\$]*[0-9,.]+\s*$') &#xA; then REGEX_Replace([_CurrentField_],',|\s|\$','')&#xA;elseif [_CurrentField_] = '-'&#xA;then '0'&#xA;else&#xA; [_CurrentField_]&#xA;ENDIF" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="18" />
+              <Fields>
+                <Field name="xxxTEXTFIELD1xxx" />
+                <Field name="xxxTEXTFIELD2xxx" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>(123.12)</c>
+                  <c>aaaa</c>
+                </r>
+                <r>
+                  <c>100,000</c>
+                  <c>bbb,bbb</c>
+                </r>
+                <r>
+                  <c>-100,00.00</c>
+                  <c>aaa</c>
+                </r>
+                <r>
+                  <c>0.001</c>
+                  <c>sss</c>
+                </r>
+                <r>
+                  <c>(33.33)</c>
+                  <c>dffas</c>
+                </r>
+                <r>
+                  <c>(100000.0000)</c>
+                  <c>(aaa)</c>
+                </r>
+                <r>
+                  <c />
+                  <c>aaa</c>
+                </r>
+                <r>
+                  <c><![CDATA[ 120.02]]></c>
+                  <c>aaa</c>
+                </r>
+                <r>
+                  <c><![CDATA[28523 ]]></c>
+                  <c><![CDATA[ aaa ]]></c>
+                </r>
+                <r>
+                  <c><![CDATA[ 23123 ]]></c>
+                  <c>2342adsa452</c>
+                </r>
+                <r>
+                  <c><![CDATA[ (1231.005) ]]></c>
+                  <c>sdfjklhf394hjk,sd</c>
+                </r>
+                <r>
+                  <c>$1,231.04</c>
+                  <c>asda2</c>
+                </r>
+                <r>
+                  <c><![CDATA[ $(128.523)]]></c>
+                  <c>$asda</c>
+                </r>
+                <r>
+                  <c>($1,231.523)</c>
+                  <c>$123567a</c>
+                </r>
+                <r>
+                  <c>-</c>
+                  <c>asdad</c>
+                </r>
+                <r>
+                  <c>-231</c>
+                  <c>dfgd</c>
+                </r>
+                <r>
+                  <c>2021-11-29</c>
+                  <c>date</c>
+                </r>
+                <r>
+                  <c>-3,429.63</c>
+                  <c>asdasd</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="xxxTEXTFIELD1xxx" size="13" source="TextInput:" type="String" />
+            <Field name="xxxTEXTFIELD2xxx" size="17" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="318" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CleanNumericStringField</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>EDT Macros</CategoryName>
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="75693e23-5000-445b-a158-761cbce2d437" />
+      <Telemetry>
+        <PreviousWorkflowId value="90aa549b-1b30-4f60-bfdd-111dfff1240b" />
+        <OriginWorkflowId value="90aa549b-1b30-4f60-bfdd-111dfff1240b" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (3)</Name>
+          <ToolId value="3" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (4)</Description>
+              <Name>Macro Output (4)</Name>
+              <ToolId value="4" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (2)</Name>
+              <ToolId value="2" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="2" Selected="True" />
+        <Tool ToolId="4" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

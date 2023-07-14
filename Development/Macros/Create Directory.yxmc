@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input</Name>
+          <Abbrev>I</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="DIR" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>C:\temp\testing</c>
+                </r>
+                <r>
+                  <c>C:\temp\testing2</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>I Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DIR" size="16" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="294" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'if not exist &quot;'+[Dir] +'&quot; mkdir &quot;'+[Dir] +'\&quot;'" field="CMD" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[CMD = 'if not exist "'+[Dir] +'" mkdir "'+[Dir] +'\"'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DIR" size="16" source="TextInput:" type="String" />
+            <Field name="CMD" size="1073741823" source="Formula: 'if not exist &quot;'+[Dir] +'&quot; mkdir &quot;'+[Dir] +'\&quot;'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RunCommand.RunCommand">
+        <Position x="486" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OutputConfiguration>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">%TEMP%\create_directory.bat</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>\0</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>False</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+          </OutputConfiguration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">%TEMP%\create_directory.bat</File>
+              <FormatSpecificOptions>
+                <HeaderRow>False</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>2540</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\0</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <ProgramName>%TEMP%\create_directory.bat</ProgramName>
+          <Arguments />
+          <WorkingDir />
+          <RunMinimized value="False" />
+          <RunSilent value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Run create_directory.bat</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="2540" source="File: C:\Users\JONATH~1\AppData\Local\Temp\Engine_22096_cc2613e33702450db5f19c6668e11dde_\create_directory.bat" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRunCommand" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CMD" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CMD" size="1073741823" source="Formula: 'if not exist &quot;'+[Dir] +'&quot; mkdir &quot;'+[Dir] +'\&quot;'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="582" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Field_1" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Count" source="Summarize: Count - Field_1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="678" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>O Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="198" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>DIR</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-01-29 10:47:15</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2021-01-29 10:47:15</StartDate>
+              <EndDate>2021-01-29 10:47:15</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([DIR])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="DIR" size="16" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="DIR" size="16" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1500" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Microsoft Sans Serif" size="26.25" style="1" />
+          <TextColor name="White" />
+          <FillColor r="31" g="68" b="125" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="726" y="54" width="576" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Description: 
+This macro creates directory structure given to it as a path. It tests if the directory already exists and returns the count of directories that it attempted to create.
+]]></Text>
+          <Font name="Segoe UI" size="12" style="0" />
+          <TextColor name="White" />
+          <FillColor r="31" g="68" b="125" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1326" y="54" width="228" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Author: Jonathon Cavalieri</Text>
+          <Font name="Segoe UI" size="9" style="0" />
+          <TextColor name="Silver" />
+          <FillColor r="31" g="68" b="125" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="270" y="54" width="456" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Alteryx Macro:
+Create Directory</Text>
+          <Font name="Segoe UI" size="24" style="0" />
+          <TextColor name="White" />
+          <FillColor r="31" g="68" b="125" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1326" y="78" width="228" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Version - 1.00</Text>
+          <Font name="Segoe UI" size="9" style="0" />
+          <TextColor name="White" />
+          <FillColor r="31" g="68" b="125" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1326" y="102" width="228" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Date: 2022-01-13</Text>
+          <Font name="Segoe UI" size="9" style="0" />
+          <TextColor name="White" />
+          <FillColor r="31" g="68" b="125" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Create Directory</Name>
+      <Description>This Macro will create a directory at the specified path if it does not already exist</Description>
+      <RootToolName>Create Directory</RootToolName>
+      <ToolVersion>1</ToolVersion>
+      <ToolInDb value="False" />
+      <CategoryName>EDT Macros</CategoryName>
+      <SearchTags>CMD, File, Directory</SearchTags>
+      <Author>Jonathon Cavalieri</Author>
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4f519dd1-6049-48d2-b110-9de2b1c497a7" />
+      <Telemetry>
+        <PreviousWorkflowId value="46431b7c-0ac4-4191-8ec9-7ec4c18de07b" />
+        <OriginWorkflowId value="ad6cde9b-ad44-4501-971f-2a670c7effca" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (8)</Name>
+          <ToolId value="8" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (9)</Description>
+              <Name>Macro Output (9)</Name>
+              <ToolId value="9" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (2)</Name>
+              <ToolId value="2" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="2" Selected="True" />
+        <Tool ToolId="9" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
