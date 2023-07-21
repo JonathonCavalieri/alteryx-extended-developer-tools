@@ -1,0 +1,2794 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="172">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="56" y="54" width="932" height="440" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Documentation</Caption>
+          <Style TextColor="#ffffff" FillColor="#ffffff" BorderColor="#000000" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="77" y="135" width="312" height="84" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text />
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+              <BG_Image>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</BG_Image>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="462" y="160" width="444" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Workflow Description</Text>
+              <Font name="Arial" size="14.25" style="1" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="474" y="196" width="504" height="96" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Description of workflows</Text>
+              <Font name="Arial" size="12" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="90" y="363" width="312" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Jonathon Cavalieri</Text>
+              <Font name="Arial" size="12" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="77" y="340" width="312" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Author</Text>
+              <Font name="Arial" size="14.25" style="1" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="594" y="328" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>General</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor name="Black" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="474" y="327" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Inputs/Outputs</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="0" g="157" b="141" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="474" y="364" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Error/warnings</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor name="Maroon" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="594" y="364" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Prep</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="0" g="101" b="168" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="66" y="88" width="912" height="36" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Documentation</Text>
+              <Font name="Arial" size="18" style="1" />
+              <TextColor name="White" />
+              <FillColor name="Gray" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="328" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Predictive</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="135" g="87" b="60" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="364" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Merge/Join</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="122" g="82" b="160" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="66" y="472" width="912" height="12" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Template created by jonathon cavalieri</Text>
+              <Font name="Arial" size="6" style="1" />
+              <TextColor name="White" />
+              <FillColor name="Gray" />
+              <Shape shape="0" />
+              <Justification Justification="2" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="90" y="243" width="312" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Formatting</Text>
+              <Font name="Arial" size="12" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="78" y="218" width="312" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Workflow Name</Text>
+              <Font name="Arial" size="14.25" style="1" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="462" y="292" width="516" height="36" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Container Legend</Text>
+              <Font name="Arial" size="14.25" style="1" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="78" y="279" width="312" height="23" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Workflow Version</Text>
+              <Font name="Arial" size="14.25" style="1" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="89" y="303" width="312" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>v1.0</Text>
+              <Font name="Arial" size="12" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="834" y="328" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Messages</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor name="Gray" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="834" y="364" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Reporting</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="208" g="147" b="82" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="474" y="400" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Aggregate</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="226" g="95" b="69" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="834" y="400" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>NLP</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="78" g="85" b="180" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="594" y="400" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>ML</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="201" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="400" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Analysis</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="139" g="188" b="186" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="474" y="436" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Parsing</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="155" g="176" b="88" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="133">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="594" y="438" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Interface</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="96" g="111" b="140" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="171">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="714" y="438" width="108" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Workflow control</Text>
+              <Font name="Arial" size="8.25" style="1" />
+              <TextColor name="White" />
+              <FillColor r="45" g="52" b="66" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="523" width="1571" height="610" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Normal Containers</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffffff" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Normal Containers</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1232" y="572" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="76">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1242" y="810" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="139" g="188" b="186" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="75">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1242" y="606" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Analysis</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="139" g="188" b="186" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1040" y="848" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="71">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1050" y="1086" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="0" g="168" b="201" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="70">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1050" y="882" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>ML</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="0" g="168" b="201" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1040" y="572" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="68">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1050" y="810" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="78" g="85" b="180" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="67">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1050" y="606" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>NLP</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="78" g="85" b="180" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="464" y="847" width="176" height="261" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="63">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="474" y="881" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Predictive</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="135" g="87" b="60" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="62">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="474" y="1086" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="135" g="87" b="60" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="848" y="572" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="40">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="858" y="810" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="226" g="95" b="69" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="39">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="858" y="606" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Aggregate</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="226" g="95" b="69" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="848" y="848" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="37">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="858" y="1086" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor name="Black" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="36">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="858" y="882" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>General</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor name="Black" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="656" y="848" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="34">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="666" y="1086" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="0" g="144" b="49" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="33">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="666" y="882" width="155" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Spatial</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="0" g="144" b="49" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="272" y="848" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="30">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="282" y="1086" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="208" g="147" b="82" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="29">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="282" y="882" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Report</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="208" g="147" b="82" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="78" y="847" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="27">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="88" y="1086" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor name="Maroon" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="26">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="88" y="881" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Error</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor name="Maroon" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="656" y="572" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="24">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="666" y="810" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor name="Gray" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="23">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="666" y="606" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Checks</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor name="Gray" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="272" y="572" width="175" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="21">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="282" y="810" width="155" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="122" g="82" b="160" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="20">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="282" y="606" width="155" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Merge/Join</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="122" g="82" b="160" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="79" y="572" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="18">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="89" y="810" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="0" g="157" b="141" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="17">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="89" y="606" width="155" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Inputs</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="0" g="157" b="141" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="464" y="572" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="15">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="474" y="810" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="0" g="101" b="168" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="14">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="474" y="606" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Prep</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="0" g="101" b="168" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1232" y="848" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="79">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1242" y="1086" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="155" g="176" b="88" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="80">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1242" y="882" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Parsing</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="155" g="176" b="88" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="132">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1424" y="572" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="130">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1434" y="810" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="96" g="111" b="140" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="131">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1434" y="606" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Interface</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="96" g="111" b="140" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="170">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1424" y="848" width="176" height="248" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="168">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1434" y="1074" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="45" g="52" b="66" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="169">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1434" y="882" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Control</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="45" g="52" b="66" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="160">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1016" y="56" width="548" height="440" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Documentation</Caption>
+          <Style TextColor="#ffffff" FillColor="#ffffff" BorderColor="#000000" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="135">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1026" y="138" width="444" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Workflow Version 3</Text>
+              <Font name="Arial" size="14.25" style="1" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="136">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1038" y="162" width="504" height="84" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>• Change 1
+• Change 2
+• Change 3
+• Change 4</Text>
+              <Font name="Arial" size="12" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="143">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1026" y="90" width="528" height="36" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Changelog</Text>
+              <Font name="Arial" size="18" style="1" />
+              <TextColor name="White" />
+              <FillColor name="Gray" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="146">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1026" y="474" width="528" height="12" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text />
+              <Font name="Arial" size="18" style="1" />
+              <TextColor name="Black" />
+              <FillColor name="Gray" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="161">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1026" y="246" width="444" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Workflow Version 2</Text>
+              <Font name="Arial" size="14.25" style="1" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="162">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1038" y="270" width="504" height="84" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>• Change 1
+• Change 2
+• Change 3
+• Change 4</Text>
+              <Font name="Arial" size="12" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="163">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1026" y="354" width="444" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Workflow Version 1</Text>
+              <Font name="Arial" size="14.25" style="1" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="164">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1038" y="378" width="504" height="84" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>• Change 1
+• Change 2
+• Change 3
+• Change 4</Text>
+              <Font name="Arial" size="12" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="167">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="1147" width="1414" height="634" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Containers</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Containers</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="109">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="1268" y="1496" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:109" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:109" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:109" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="125">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1278" y="1530" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Parsing</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="155" g="176" b="88" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="126">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1278" y="1734" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="155" g="176" b="88" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="1076" y="1496" width="164" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:112" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:112" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:112" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="123">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1086" y="1530" width="144" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>ML</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="0" g="168" b="201" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="124">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1086" y="1734" width="144" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="0" g="168" b="201" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="110">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="884" y="1496" width="164" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:110" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:110" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:110" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="121">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="894" y="1530" width="144" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>General</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor name="Black" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="122">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="894" y="1734" width="144" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor name="Black" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="111">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="680" y="1496" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:111" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:111" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:111" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="119">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="690" y="1530" width="155" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Spatial</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="0" g="144" b="49" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="120">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="690" y="1734" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="0" g="144" b="49" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="476" y="1496" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:100" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:100" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:100" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="117">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="486" y="1530" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Predictive</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="135" g="87" b="60" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="118">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="486" y="1734" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="135" g="87" b="60" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="99">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="272" y="1496" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:99" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:99" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:99" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="115">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="282" y="1530" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Report</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="208" g="147" b="82" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="116">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="282" y="1734" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="208" g="147" b="82" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="97">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="884" y="1196" width="164" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:97" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:97" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:97" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="103">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="894" y="1434" width="144" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="226" g="95" b="69" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="104">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="894" y="1230" width="144" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Aggregate</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="226" g="95" b="69" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="680" y="1196" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:96" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:96" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:96" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="101">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="690" y="1230" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Checks</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor name="Gray" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="102">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="690" y="1434" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor name="Gray" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="98">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="1076" y="1196" width="164" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:98" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:98" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:98" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="105">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1086" y="1230" width="144" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>NLP</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="78" g="85" b="180" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="106">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1086" y="1434" width="144" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="78" g="85" b="180" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="1268" y="1196" width="164" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:89" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:89" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:89" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="107">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1278" y="1230" width="144" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Analysis</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="139" g="188" b="186" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="108">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1278" y="1434" width="144" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="139" g="188" b="186" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="476" y="1196" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:90" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:90" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:90" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="94">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="486" y="1230" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Prep</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="0" g="101" b="168" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="95">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="486" y="1434" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="0" g="101" b="168" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="80" y="1196" width="164" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:83" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:83" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:83" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="84">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="90" y="1230" width="144" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Inputs</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="0" g="157" b="141" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="85">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="90" y="1434" width="144" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="0" g="157" b="141" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="88">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="271" y="1196" width="176" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:88" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:88" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:88" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="92">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="281" y="1230" width="156" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Merge/Join</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor r="122" g="82" b="160" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="93">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="281" y="1434" width="156" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor r="122" g="82" b="160" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+            <Position x="80" y="1496" width="164" height="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption />
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Log">
+              <RecordInfo>
+                <Field name="ToolID" source="CtrlContainer:91" type="Int32" />
+                <Field name="MessageType" size="64000" source="CtrlContainer:91" type="V_WString" />
+                <Field name="Message" size="64000" source="CtrlContainer:91" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="113">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="90" y="1530" width="144" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Error</Text>
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="White" />
+                  <FillColor name="Maroon" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="114">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="90" y="1734" width="144" height="12" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text />
+                  <Font name="Arial" size="18" style="1" />
+                  <TextColor name="Black" />
+                  <FillColor name="Maroon" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Formatting</Name>
+      <Description>Does nothing, but hold the formatting templates for other workflows</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>EDT Macros</CategoryName>
+      <SearchTags>Formatting</SearchTags>
+      <Author>Jonathon Cavalieri</Author>
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="841b93e3-42fd-4e89-9569-f4aacc7a3214" />
+      <Telemetry>
+        <PreviousWorkflowId value="e952911b-1aa9-45b1-a83e-d6b7e89c222a" />
+        <OriginWorkflowId value="e21308c0-7a57-43bd-b88d-c81f7575ad92" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (172)</Name>
+          <ToolId value="172" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
